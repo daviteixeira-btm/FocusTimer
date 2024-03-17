@@ -8,9 +8,20 @@
     --hue: 194;
     --bg-color: hsl(var(--hue), 5%, 7%);
     font-size: clamp(40%, 1% + 2vw, 62.5%);
-    --text-color: hsl(var(--hue), 40%, 90%);
+    --text-color: hsl(var(--hue), 40%, 98%);
     --primary-color: hsl(var(--hue), 100%, 63%);
     --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --button-secondary: hsl(var(--hue), 40%, 98%);
+}
+
+html.light {
+    --bg-color: hsl(var(--hue), 40%, 98%);
+    --text-color: hsl(var(--hue), 5%, 7%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
 }
 
 body {
@@ -28,6 +39,15 @@ body #app {
 
 .flex {
     display: flex;
+}
+
+body #app #toggle-mode {
+    top: 3.2rem;
+    right: 3.2rem;
+    line-height: 0;
+    font-size: 3.2rem;
+    position: absolute;
+    color: var(--text-color);
 }
 
 body #app #timer {
@@ -53,7 +73,7 @@ button {
 }
 
 .secondary {
-    color: var(--text-color);
+    color: var(--button-secondary);
 }
 
 .running .ph-timer,
