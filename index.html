@@ -7,11 +7,14 @@
     <meta name="description" content="O FocusTumer é um Timer desenvolvido em Javascript com possibilidade de alternar entre dark/light mode e música de fundo.">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <main id="app">
         <button id="#toogle-mode">
             <span>Ativar/Desativar Light Mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
         </button>
 
         <section id="timer">
@@ -21,12 +24,12 @@
         </section>
 
         <section id="controls">
-            <button>play</button>
-            <button>pause</button>
-            <button>set</button>
-            <button>stop</button>
-            <button>musicon</button>
-            <button>musicoff</button>
+            <button class="ph ph-play-circle"></button>
+            <button class="ph ph-pause-circle"></button>
+            <button class="ph ph-timer"></button>
+            <button class="ph ph-stop-circle"></button>
+            <button class="ph ph-speaker-none"></button>
+            <button class="ph ph-speaker-high"></button>
         </section>
     </main>
 </body>
