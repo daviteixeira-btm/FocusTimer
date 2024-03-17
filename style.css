@@ -7,6 +7,7 @@
 :root {
     --hue: 194;
     --bg-color: hsl(var(--hue), 5%, 7%);
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
     --text-color: hsl(var(--hue), 40%, 90%);
     --primary-color: hsl(var(--hue), 100%, 63%);
     --controls-bg-color: hsl(var(--hue), 0%, 14%);
@@ -27,4 +28,30 @@ body #app {
 
 .flex {
     display: flex;
+}
+
+body #app #timer {
+    font-size: 9.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+body #app #controls {
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+    border-radius: 999rem;
+    background-color: var(--controls-bg-color);
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    font-size: 6.4rem;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.secondary {
+    color: var(--text-color);
 }
