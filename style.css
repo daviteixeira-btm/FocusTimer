@@ -50,6 +50,17 @@ body #app #toggle-mode {
     color: var(--text-color);
 }
 
+.sr-only {
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    appearance: none;
+    position: absolute;
+}
+
 body #app #timer {
     font-size: 9.6rem;
     font-weight: bold;
