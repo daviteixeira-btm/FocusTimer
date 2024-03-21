@@ -1,5 +1,5 @@
-import * as actions from "./actions";
-import { controls } from "./elements";
+import * as actions from "./actions.js";
+import { controls } from "./elements.js";
 
 export function registerControls(){
     controls.addEventListener('click', (event) => {

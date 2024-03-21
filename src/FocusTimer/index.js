@@ -1,5 +1,5 @@
-import state from "./state";
-import * as events from "./events";
+import state from "./state.js";
+import * as events from "./events.js";
 
 export function start(minutes, seconds){
     state.minutes = minutes;
