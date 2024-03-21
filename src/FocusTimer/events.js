@@ -1,3 +1,4 @@
+import * as el from "./elements.js";
 import * as actions from "./actions.js";
 import { controls } from "./elements.js";
 
@@ -9,6 +10,12 @@ export function registerControls(){
             return;
         }
 
-        actions[action]()
+        actions[action]();
     });
-}
+};
+
+export function setMinutes(){
+    el.minutes.addEventListener('focus', () => {
+        el.minutes.textContent = "";
+    });
+};
