@@ -33,8 +33,9 @@ body {
 }
 
 body #app {
-    display: grid;
+    display: flex;
     justify-items: center;
+    justify-content: space-around;
 }
 
 .flex {
@@ -61,13 +62,49 @@ body #app #toggle-mode {
     position: absolute;
 }
 
-body #app #timer {
+body #app #left {
+    display: flex;
+    align-items: center;
+    margin-right: 9.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body #app #right {
+    display: grid;
+    width: 30.8rem;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 15rem 15rem;
+}
+
+body #app #right button {
+    width: 13.8rem;
+    margin: 1.6rem;
+    height: 15.2rem;
+    color: #323238;
+    border-radius: 2rem;
+    transition: all .3s;
+    background-color: #E1E1E6;
+}
+
+body #app #right button:hover {
+    color: #E1E1E6;
+    background-color: #02799D;
+}
+
+body #app #right button.active {
+    color: #E1E1E6;
+    background-color: #02799D;
+}
+
+body #app #left #timer {
     font-size: 9.6rem;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-body #app #controls {
+body #app #left #controls {
     gap: 1.6rem;
     margin-top: 1.6rem;
     padding: 2.2rem 4rem;

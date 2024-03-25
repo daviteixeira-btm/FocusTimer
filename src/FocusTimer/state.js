@@ -4,4 +4,5 @@ export default {
     isMute: true,
     isRunning: false,
     countdownId: null,
+    currentSound: null,
 }

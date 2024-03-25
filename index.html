@@ -12,54 +12,85 @@
 </head>
 <body>
     <main id="app">
+
         <button id="toggle-mode">
             <span class="sr-only">Ativar light mode!</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
 
-        <section id="timer" class="flex">
-            <span id="minutes">00</span>
-            <span>:</span>
-            <span id="seconds">00</span>
+        <section id="left">
+            
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+    
+            <section id="controls" class="flex">
+                <button
+                    data-action="toggleRunning"
+                    class="ph ph-play-circle"
+                >
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+                <button
+                    data-action="toggleRunning"
+                    class="ph ph-pause-circle"
+                >
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+                <button
+                    data-action="set"
+                    class="ph ph-timer secondary"
+                >
+                    <span class="sr-only">Ajustar contador</span>
+                </button>
+                <button
+                    data-action="reset"
+                    class="ph ph-stop-circle secondary"
+                >
+                    <span class="sr-only">Reiniciar contador</span>
+                </button>
+                <button
+                    data-action="toggleMusic"
+                    class="ph ph-speaker-none secondary"
+                >
+                    <span class="sr-only">Iniciar música</span>
+                </button>
+                <button
+                    data-action="toggleMusic"
+                    class="ph ph-speaker-high"
+                >
+                    <span class="sr-only">Parar música</span>
+                </button>
+
+                <button class="ph ph-plus moreFive">
+                    <span class="sr-only">Mais cinco minutos</span>
+                </button>
+
+                <button class="ph ph-minus minusFive">
+                    <span class="sr-only">Menos cinco minutos</span>
+                </button>
+            </section>
         </section>
 
-        <section id="controls" class="flex">
-            <button
-                data-action="toggleRunning"
-                class="ph ph-play-circle"
-            >
-                <span class="sr-only">Iniciar contador</span>
+        <section id="right">
+
+            <button class="ph ph-tree forest">
+                <span class="sr-only">Som da Floresta</span>
             </button>
-            <button
-                data-action="toggleRunning"
-                class="ph ph-pause-circle"
-            >
-                <span class="sr-only">Pausar contador</span>
+
+            <button class="ph ph-cloud-snow rain">
+                <span class="sr-only">Som da chuva</span>
             </button>
-            <button
-                data-action="set"
-                class="ph ph-timer secondary"
-            >
-                <span class="sr-only">Ajustar contador</span>
+
+            <button class="ph ph-storefront coffe">
+                <span class="sr-only">Som da Cafeteria</span>
             </button>
-            <button
-                data-action="reset"
-                class="ph ph-stop-circle secondary"
-            >
-                <span class="sr-only">Reiniciar contador</span>
-            </button>
-            <button
-                data-action="toggleMusic"
-                class="ph ph-speaker-none secondary"
-            >
-                <span class="sr-only">Iniciar música</span>
-            </button>
-            <button
-                data-action="toggleMusic"
-                class="ph ph-speaker-high"
-            >
-                <span class="sr-only">Parar música</span>
+
+            <button class="ph ph-campfire fireplace">
+                <span class="sr-only">Som da Lareira</span>
             </button>
         </section>
     </main>
