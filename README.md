@@ -44,14 +44,9 @@
 
 ### ```COMANDOS```
 
-#### Para instalar as dependências
-```
- npm install
-```
-
 #### Para rodar o projeto
 ```
- npm start
+ Apenas execute o projeto no navegador ou use o live-server
 ```
 <a id="Licensa"></a>
 ## 📝 License
